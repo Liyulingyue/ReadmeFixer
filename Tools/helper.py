@@ -131,7 +131,7 @@ f"""
 
 请以json格式返回判断结果，输出给是如下
 {{
-    "informative_title": "str，样例文档中，用于参考的章节的标题",
+    "informative_title": "str，样例文档中，用于参考的章节的标题"
 }}
 
 """
