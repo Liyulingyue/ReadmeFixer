@@ -40,7 +40,7 @@ def align_titles(new_titles, target_blocks, example_blocks, save_flag=True, save
         block = merged_blocks[i]
         # def get_informative_content(title, example_blocks):
         # return informative_content
-        new_title = block['title']
+        new_title = block['new_title']
         informative_content = get_informative_content(new_title, example_blocks)
         merged_blocks[i]['informative_content'] = informative_content
 
@@ -58,7 +58,7 @@ def align_titles(new_titles, target_blocks, example_blocks, save_flag=True, save
 def generate_content(merged_blocks, sh_content, save_flag=True, save_path="log.json"):
     for i in range(len(merged_blocks)):
         block = merged_blocks[i]
-        new_title = block['title']
+        new_title = block['new_title']
         informative_content = block['informative_content']
         old_content = block['content']
         new_content = get_new_content(new_title, old_content, informative_content, sh_content)
