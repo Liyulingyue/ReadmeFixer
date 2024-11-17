@@ -1,6 +1,6 @@
 import os
 
-os.environ["ERNIE_TOKEN"] = "3fd851ee53e76f28173bce00b3b16ff2814e1d25"
+os.environ["ERNIE_TOKEN"] = "****"
 
 from Tools.gen_new_readme import *
 
